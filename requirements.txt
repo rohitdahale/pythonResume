@@ -1,0 +1,6 @@
+Flask
+flask-cors
+spacy
+requests
+PyPDF2
+gunicorn
