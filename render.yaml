@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: resume-analysis-api
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m spacy download en_core_web_sm
+    startCommand: gunicorn app:app
